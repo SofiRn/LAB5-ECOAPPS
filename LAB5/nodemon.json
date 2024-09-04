@@ -1,0 +1,5 @@
+{
+	"watch": ["server/index.js"],
+	"ignore": ["driver", "passenger"],
+	"exec": "node server/index.js"
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Passenger - ECOUber</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="login">
+			<h1>Iniciar sesión</h1>
+			<input type="text" id="userName" placeholder="Nombre" />
+			<button id="loginBtn">Log In</button>
+		</div>
+
+		<div id="requestTrip" style="display: none">
+			<h2>¿A dónde vas?</h2>
+			<input type="text" id="origin" placeholder="Origen" />
+			<input type="text" id="destination" placeholder="Destino" />
+			<button id="requestTripBtn">Solicitar Viaje</button>
+		</div>
+
+		<div id="waiting" style="display: none">
+			<h2>Buscando conductores disponibles...</h2>
+		</div>
+		<!-- <div id="availableCars"></div> -->
+
+		<div id="selectDriver" style="display: none">
+			<h2>Selecciona tu conductor</h2>
+			<select id="availableCars"></select>
+			<button id="selectDriverBtn">Confirmar Conductor</button>
+		</div>
+
+		<div id="tripStatus" style="display: none">
+			<h2>Estado del Viaje: <span id="tripStatusText"></span></h2>
+		</div>
+
+		<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
+
+
